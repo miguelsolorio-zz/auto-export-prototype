@@ -1,5 +1,5 @@
 # Export Prototype
-Chrome extension for exporting internal prototype tool
+Tampermonkey script for exporting internal prototype tool
 
 ### Requirements
 - [Chrome](http://www.google.com/chrome/)
@@ -8,7 +8,7 @@ Chrome extension for exporting internal prototype tool
 ### Install
 1. Navigate to Tampermonkey dashboard
 2. Click on Utilities > File Import
-3. Select ExportPrototype.user.js
+3. Select [ExportPrototype-import.txt](https://raw.githubusercontent.com/miguelsolorio/export-prototype/master/ExportPrototype-import.txt)
 4. Enable script
 
 *NOTE: the default is set to export every 5min*

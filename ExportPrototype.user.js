@@ -24,7 +24,7 @@ function exportPrototype() {
 }
 function init(){
     console.log('### Auto Export Prototype is starting...');
-    exportPrototype();
+    setTimeout(exportPrototype, 10000);
 }
 
 // ==== Event Listeners

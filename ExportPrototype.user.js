@@ -1,6 +1,6 @@
 // ==UserScript==
-// @name         Export Prototype
-// @namespace    http://azureux.azurewebsites.net/*
+// @name         Auto Export Prototype
+// @namespace    http://azureux.azurewebsites.net/
 // @version      1.0
 // @description  Tampermonkey script for exporting internal prototype tool
 // @author       Miguel Solorio
@@ -17,13 +17,14 @@ var timer = min*60000;
 function exportPrototype() {
     var d = new Date();
     var timestamp = d.toString();
-    console.log("Exported JSON("+i+") "+ timestamp);
+    console.log("### Exported JSON("+i+") "+ timestamp);
     i++;
     Azure.Framework.StorageController.Export();
     setTimeout(exportPrototype, timer);
 }
 function init(){
-    setTimeout(exportPrototype, timer);
+    console.log('### Auto Export Prototype is starting...');
+    exportPrototype();
 }
 
 // ==== Event Listeners
